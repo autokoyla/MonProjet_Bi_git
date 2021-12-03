@@ -8,4 +8,4 @@ INSERT INTO DimVendeur(IdVendeur,vendeur,DS_IdVendeur)
 SELECT ROW_NUMBER() OVER(ORDER BY Vendeur ASC) IdVendeur,* FROM (
 SELECT DISTINCT vendeur, ds_idvendeur FROM DS_VENTE) T
 
---SELECT * FROM DimVendeur
+SELECT * FROM DimVendeur
